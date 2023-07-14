@@ -48,7 +48,7 @@ public class CustomerController {
     }
 
     @GetMapping("/info")
-    public List<CustomerProjection> customerInfo(@RequestParam(required = false) String phoneNumber){
+    public List<CustomerProjection> customerInfo() {
         return customerService.getCustomerInfo();
     }
 
